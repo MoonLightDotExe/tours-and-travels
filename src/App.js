@@ -11,6 +11,7 @@ import SignIn from './pages/SignIn'
 import SignUp from './pages/SignUp'
 import ForgotPassword from './pages/ForgotPassword'
 import Listing from './pages/Listing'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -54,7 +55,12 @@ function App() {
             path='/category/:categoryName/:listingId'
             element={<Listing />}
           />
+          <Route
+            path='/about'
+            element={<Footer />}
+          />
         </Routes>
+
         <Navbar />
       </Router>
 

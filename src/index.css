@@ -118,7 +118,7 @@ button {
   align-items: center;
 }
 
-.pageContainer{
+.pageContainer {
   margin-bottom: 10rem;
 }
 
@@ -823,4 +823,43 @@ button {
   margin-left: 1rem;
   font-size: 0.8rem;
   opacity: 0.75;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  padding: 2rem;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.about {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.insta {
+  padding-top: 0.2rem;
+}
+
+.us {
+  padding: 2rem;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.link-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 4.5rem;
 }

@@ -2,6 +2,7 @@ import { useNavigate, useLocation } from 'react-router-dom'
 import { ReactComponent as OfferIcon } from '../assets/svg/localOfferIcon.svg'
 import { ReactComponent as ExploreIcon } from '../assets/svg/exploreIcon.svg'
 import { ReactComponent as PersonOutlineIcon } from '../assets/svg/personOutlineIcon.svg'
+import { HiUserGroup } from 'react-icons/hi'
 
 function Navbar() {
   const navigate = useNavigate()
@@ -53,6 +54,21 @@ function Navbar() {
               }
             >
               Profile
+            </p>
+          </li>
+          <li
+            className='navbarListItem'
+            onClick={() => navigate('/about')}
+          >
+            <HiUserGroup />
+            <p
+              className={
+                pathMatchRoute('/about')
+                  ? 'navbarListItemNameActive'
+                  : 'navbarListItemName'
+              }
+            >
+              About
             </p>
           </li>
         </ul>
